@@ -1,6 +1,7 @@
 import { TopHeader, Header } from "../../components";
 import { Outlet } from "react-router-dom";
 
+
 const HomePageLayout = () => {
   return (
     <div className="w-full">
