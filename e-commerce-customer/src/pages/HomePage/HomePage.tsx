@@ -1,6 +1,8 @@
 const mockData = [
   {
-    image: "",
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770332/products/wb5ckgto2hk9yvbbx3ez.png",
     rating: 0,
     name: "AVX G2 438",
     price: 500,
@@ -8,7 +10,9 @@ const mockData = [
     totalReviews: 5,
   },
   {
-    image: "",
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/wchbo34j2ienzuaaqr0i.png",
     rating: 1,
     name: "Lorem AVF L86 9061 HZ 90810 LO10931 P10313 QA",
     price: 1000,
@@ -16,7 +20,9 @@ const mockData = [
     totalReviews: 5,
   },
   {
-    image: "",
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/ltt6lsbnnfuvs1aputna.png",
     rating: 2,
     name: "AVX G2 438",
     price: 200,
@@ -24,7 +30,9 @@ const mockData = [
     totalReviews: 100,
   },
   {
-    image: "",
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/bogmggtbjryon13jbbwq.png",
     rating: 3,
     name: "AVX G2 438",
     price: 400,
@@ -32,7 +40,9 @@ const mockData = [
     totalReviews: 99,
   },
   {
-    image: "",
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/r3mdq6xljovga6negthe.png",
     rating: 4.5,
     name: "AVX G2 438",
     price: 500,
@@ -40,7 +50,9 @@ const mockData = [
     totalReviews: 1000,
   },
   {
-    image: "",
+    id: 6,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/f3chxyhirztctbcxk2sf.png",
     rating: 2.5,
     name: "AVX G2 438",
     price: 500,
@@ -48,7 +60,9 @@ const mockData = [
     totalReviews: 20,
   },
   {
-    image: "",
+    id: 7,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/z3h2o8cmwevr1ka7z7mx.png",
     rating: 3.5,
     name: "AVX G2 438",
     price: 500,
@@ -56,7 +70,9 @@ const mockData = [
     totalReviews: 20,
   },
   {
-    image: "",
+    id: 8,
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/ru0nxikdwamwda0ehdea.png",
     rating: 0.5,
     name: "AVX G2 438",
     price: 500,
@@ -64,6 +80,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 9,
     image: "",
     rating: 4,
     name: "AVX G2 438",
@@ -72,6 +89,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 10,
     image: "",
     rating: 3,
     name: "AVX G2 438",
@@ -80,6 +98,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 11,
     image: "",
     rating: 2,
     name: "AVX G2 438",
@@ -88,6 +107,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 12,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -96,6 +116,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 13,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -104,6 +125,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 14,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -112,6 +134,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 15,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -120,6 +143,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 16,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -128,6 +152,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 17,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -136,6 +161,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 18,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -144,6 +170,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 19,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -152,6 +179,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 20,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -160,6 +188,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 21,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -168,6 +197,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 22,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -176,6 +206,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 23,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -184,6 +215,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 24,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -192,6 +224,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 25,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -200,6 +233,7 @@ const mockData = [
     totalReviews: 20,
   },
   {
+    id: 26,
     image: "",
     rating: 5,
     name: "AVX G2 438",
@@ -210,6 +244,7 @@ const mockData = [
 ];
 
 const HomePage = () => {
+  console.log(mockData.length);
   return <p className="text-3xl font-bold underline">Home Page body</p>;
 };
 
