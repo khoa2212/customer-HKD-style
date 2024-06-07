@@ -1,8 +1,9 @@
 const mockData = [
   {
     id: 1,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770332/products/wb5ckgto2hk9yvbbx3ez.png",
+    ],
     rating: 0,
     name: "AVX G2 438",
     price: 500,
@@ -11,8 +12,9 @@ const mockData = [
   },
   {
     id: 2,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/wchbo34j2ienzuaaqr0i.png",
+    ],
     rating: 1,
     name: "Lorem AVF L86 9061 HZ 90810 LO10931 P10313 QA",
     price: 1000,
@@ -21,8 +23,9 @@ const mockData = [
   },
   {
     id: 3,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/ltt6lsbnnfuvs1aputna.png",
+    ],
     rating: 2,
     name: "AVX G2 438",
     price: 200,
@@ -31,8 +34,9 @@ const mockData = [
   },
   {
     id: 4,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/bogmggtbjryon13jbbwq.png",
+    ],
     rating: 3,
     name: "AVX G2 438",
     price: 400,
@@ -41,8 +45,9 @@ const mockData = [
   },
   {
     id: 5,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/r3mdq6xljovga6negthe.png",
+    ],
     rating: 4.5,
     name: "AVX G2 438",
     price: 500,
@@ -51,8 +56,9 @@ const mockData = [
   },
   {
     id: 6,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/f3chxyhirztctbcxk2sf.png",
+    ],
     rating: 2.5,
     name: "AVX G2 438",
     price: 500,
@@ -61,8 +67,9 @@ const mockData = [
   },
   {
     id: 7,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/z3h2o8cmwevr1ka7z7mx.png",
+    ],
     rating: 3.5,
     name: "AVX G2 438",
     price: 500,
@@ -71,8 +78,9 @@ const mockData = [
   },
   {
     id: 8,
-    image:
+    attachment: [
       "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/ru0nxikdwamwda0ehdea.png",
+    ],
     rating: 0.5,
     name: "AVX G2 438",
     price: 500,
@@ -81,7 +89,9 @@ const mockData = [
   },
   {
     id: 9,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/stws4wo1t4jzx0kef3kl.png",
+    ],
     rating: 4,
     name: "AVX G2 438",
     price: 500,
@@ -90,7 +100,9 @@ const mockData = [
   },
   {
     id: 10,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/jwg1ilgpkevoml20cdnx.png",
+    ],
     rating: 3,
     name: "AVX G2 438",
     price: 500,
@@ -99,7 +111,9 @@ const mockData = [
   },
   {
     id: 11,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 2,
     name: "AVX G2 438",
     price: 500,
@@ -108,7 +122,9 @@ const mockData = [
   },
   {
     id: 12,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -117,7 +133,9 @@ const mockData = [
   },
   {
     id: 13,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -126,7 +144,9 @@ const mockData = [
   },
   {
     id: 14,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -135,7 +155,9 @@ const mockData = [
   },
   {
     id: 15,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -144,7 +166,9 @@ const mockData = [
   },
   {
     id: 16,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -153,7 +177,9 @@ const mockData = [
   },
   {
     id: 17,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/mwo8cru9mrg4z89s45dc.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -162,7 +188,9 @@ const mockData = [
   },
   {
     id: 18,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/lw1701tzogi4rqqxacos.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -171,7 +199,9 @@ const mockData = [
   },
   {
     id: 19,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/xrxww4ftsfbmfcqhgetv.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -180,7 +210,9 @@ const mockData = [
   },
   {
     id: 20,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/xrxww4ftsfbmfcqhgetv.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -189,7 +221,9 @@ const mockData = [
   },
   {
     id: 21,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/xrxww4ftsfbmfcqhgetv.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -198,7 +232,9 @@ const mockData = [
   },
   {
     id: 22,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -207,7 +243,9 @@ const mockData = [
   },
   {
     id: 23,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -216,7 +254,9 @@ const mockData = [
   },
   {
     id: 24,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -225,7 +265,9 @@ const mockData = [
   },
   {
     id: 25,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
@@ -234,7 +276,9 @@ const mockData = [
   },
   {
     id: 26,
-    image: "",
+    attachment: [
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png",
+    ],
     rating: 5,
     name: "AVX G2 438",
     price: 500,
