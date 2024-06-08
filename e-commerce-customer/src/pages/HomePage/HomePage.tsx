@@ -300,43 +300,43 @@ const HomePage = () => {
                 <Carousel />
             </div>
             <div>
-                <div className="flex w-[100px] h-[40px] gap-4 justify-center items-center">
-                    <div className="w-[20px] h-[40px] bg-red-700"></div>
+                <div className="flex gap-4 items-center">
+                    <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
                     <h3 className="text-red-700">Today's</h3>
                 </div>
                 <div className="flex items-end">
-                    <h2 className="font-bold text-[32px] mr-12">Flash Sales</h2>
+                    <h2 className="font-bold text-3xl mr-12">Flash Sales</h2>
                     <div className="flex items-end gap-2">
                         <div className="flex flex-col">
                             <p className="text-xs font-bold">Days</p>
-                            <h1 className="font-bold text-[32px]">03</h1>
+                            <h1 className="font-bold text-3xl">03</h1>
                         </div>
-                        <div className="font-bold text-orange-500 text-[32px]">
+                        <div className="font-bold text-orange-500 text-3xl">
                             :
                         </div>
 
                         <div className="flex flex-col">
                             <p className="text-xs font-bold">Hours</p>
-                            <h1 className="font-bold text-[32px]">03</h1>
+                            <h1 className="font-bold text-3xl">03</h1>
                         </div>
-                        <div className="font-bold text-orange-500 text-[32px]">
+                        <div className="font-bold text-orange-500 text-3xl">
                             :
                         </div>
                         <div className="flex flex-col">
                             <p className="text-xs font-bold">Minutes</p>
-                            <h1 className="font-bold text-[32px]">03</h1>
+                            <h1 className="font-bold text-3xl">03</h1>
                         </div>
-                        <div className="font-bold text-orange-500 text-[32px]">
+                        <div className="font-bold text-orange-500 text-3xl">
                             :
                         </div>
 
                         <div className="flex flex-col">
                             <p className="text-xs font-bold">Seconds</p>
-                            <h1 className="font-bold text-[32px]">03</h1>
+                            <h1 className="font-bold text-3xl">03</h1>
                         </div>
                     </div>
                 </div>
-                <div className="flex overflow-x-scroll gap-4 flex-nowrap">
+                <div className="flex overflow-hidden gap-4 flex-nowrap">
                     {mockData?.map((card) => (
                         <Card
                             key={card.id}

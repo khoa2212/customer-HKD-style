@@ -9,14 +9,14 @@ interface CardProps {
 
 const Card = ({ image, name, sales, price }: CardProps) => {
     return (
-        <div className="max-w-[500px] h-[300px] rounded-md w-full">
-            <div className="w-full rounded-md relative bg-gray-200 flex justify-center items-center h-2/3">
+        <div className="rounded-md basis-1/5 shrink-0 grow-0">
+            <div className="w-full h-2/3 rounded-md relative bg-gray-200 flex justify-center items-center">
                 <img
                     src={image}
-                    alt="abcd"
-                    className="rounded-t-lg"
+                    alt={name}
+                    className="rounded-t-lg w-2/3 h-full object-cover"
                 />
-                <p className="absolute top-3 left-3 w-[55px] h-[26px] bg-red-600 px-3 text-white rounded-[4px] text-center">
+                <p className="absolute top-3 left-3 bg-red-600 px-3 text-white rounded-sm text-center">
                     -{sales}%
                 </p>
                 <div className="absolute top-3 right-3 flex flex-col gap-2">

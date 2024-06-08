@@ -6,7 +6,7 @@ const HomePageLayout = () => {
         <div className="w-full">
             <TopHeader />
             <Header />
-            <div className="w-full h-full px-[135px] pt-[40px] max-sm:px-[2px] max-sm:pt-[5px] scroll-auto">
+            <div className="w-full h-full px-6 pt-6">
                 <Outlet />
             </div>
             <Footer />
