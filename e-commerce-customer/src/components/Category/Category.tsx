@@ -1,15 +1,15 @@
 const Header = () => {
     return (
-        <div className="gap-4 w-[180px] border-r-2">
-            <div>Woman’s Fashion</div>
-            <div>Men’s Fashion</div>
-            <div>Kid’s Fashion</div>
-            <div>Home & Lifestyle</div>
-            <div>Medicine </div>
-            <div>Sports & Outdoor</div>
-            <div>Baby’s & Toys</div>
-            <div>Groceries & Pets</div>
-            <div>Health & Beauty</div>
+        <div className="flex flex-col gap-4 border-r-2 basis-1/3">
+            <div className="hover:text-red-1 cursor-pointer">Woman’s Fashion</div>
+            <div className="hover:text-red-1 cursor-pointer">Men’s Fashion</div>
+            <div className="hover:text-red-1 cursor-pointer">Kid’s Fashion</div>
+            <div className="hover:text-red-1 cursor-pointer">Home & Lifestyle</div>
+            <div className="hover:text-red-1 cursor-pointer">Medicine </div>
+            <div className="hover:text-red-1 cursor-pointer">Sports & Outdoor</div>
+            <div className="hover:text-red-1 cursor-pointer">Baby’s & Toys</div>
+            <div className="hover:text-red-1 cursor-pointer">Groceries & Pets</div>
+            <div className="hover:text-red-1 cursor-pointer">Health & Beauty</div>
         </div>
     );
 };

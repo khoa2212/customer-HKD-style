@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card = ({ image, name, sales, price }: CardProps) => {
     return (
-        <div className="rounded-md basis-1/5 shrink-0 grow-0">
+        <div className="rounded-md basis-1/6 shrink-0 grow-0">
             <div className="w-full h-2/3 rounded-md relative bg-gray-200 flex justify-center items-center">
                 <img
                     src={image}
