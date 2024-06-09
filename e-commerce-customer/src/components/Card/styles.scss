@@ -1,0 +1,12 @@
+.header {
+    &:hover {
+        .add-to-cart {
+            display: block;
+            transition: display ease 0.5s;
+        }
+    }
+}
+
+.add-to-cart {
+    display: none;
+}

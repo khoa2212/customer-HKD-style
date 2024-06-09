@@ -1,4 +1,6 @@
 import { EyeIcon, HeartIcon } from '../Icons/Icons';
+import './styles.scss';
+
 interface CardProps {
     id: number;
     image: string;
@@ -10,7 +12,7 @@ interface CardProps {
 const Card = ({ image, name, sales, price }: CardProps) => {
     return (
         <div className="rounded-md basis-1/6 shrink-0 grow-0">
-            <div className="w-full h-2/3 rounded-md relative bg-gray-200 flex justify-center items-center">
+            <div className="header w-full h-2/3 rounded-md relative bg-gray-200 flex justify-center items-center">
                 <img
                     src={image}
                     alt={name}
@@ -22,6 +24,9 @@ const Card = ({ image, name, sales, price }: CardProps) => {
                 <div className="absolute top-3 right-3 flex flex-col gap-2">
                     <HeartIcon />
                     <EyeIcon />
+                </div>
+                <div className="add-to-cart cursor-pointer rounded-md absolute bottom-0 bg-black text-white text-center w-full p-2">
+                    Add to cart
                 </div>
             </div>
 
