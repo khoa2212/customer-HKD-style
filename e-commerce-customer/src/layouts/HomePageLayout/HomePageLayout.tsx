@@ -6,7 +6,7 @@ const HomePageLayout = () => {
         <div className="w-full">
             <TopHeader />
             <Header />
-            <div className="w-full h-full px-6 pt-6">
+            <div className="w-full h-full p-1 lg:p-6">
                 <Outlet />
             </div>
             <Footer />

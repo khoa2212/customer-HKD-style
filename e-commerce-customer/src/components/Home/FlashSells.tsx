@@ -9,7 +9,7 @@ const FlashSells = () => {
                 <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
                 <p className="text-red-700 text-3xl">Today's</p>
             </div>
-            <div className="flex items-end w-full gap-12">
+            <div className="flex items-end flex-wrap lg:flex-nowrap w-full gap-4 lg:gap-12">
                 <h2 className="font-bold text-3xl">Flash Sales</h2>
                 <div className="flex items-end gap-2 flex-1">
                     <div className="flex flex-col basis-[3%]">
@@ -59,11 +59,12 @@ const FlashSells = () => {
                     />
                 ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center my-6">
                 <button className="bg-red-600 rounded-md text-white text-center px-4 py-2">
                     View all products
                 </button>
             </div>
+            <div className="border-b-2 mx-9 my-5"></div>
         </>
     );
 };
