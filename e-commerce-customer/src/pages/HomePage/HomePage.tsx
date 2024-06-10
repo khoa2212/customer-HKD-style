@@ -23,7 +23,7 @@ const HomePage = () => {
             <div className="mt-6">
                 <BestSellingProducts />
             </div>
-            <div className="mt-6">
+            <div className="mt-6 w-full flex justify-center">
                 <ExploreOurProducts />
             </div>
             <div className="flex flex-col lg:flex-row items-center lg:justify-center gap-14 my-32">

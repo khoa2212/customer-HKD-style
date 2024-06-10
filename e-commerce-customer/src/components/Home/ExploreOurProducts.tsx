@@ -4,7 +4,7 @@ import { ArrowLongLeft, ArrowLongRight } from '../Icons/Icons';
 
 const ExploreOurProducts = () => {
     return (
-        <>
+        <div className="w-fit h-fit">
             <div className="flex gap-4 items-center">
                 <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
                 <p className="text-red-700 text-3xl">Our products</p>
@@ -19,7 +19,7 @@ const ExploreOurProducts = () => {
                     <ArrowLongRight />
                 </div>
             </div>
-            <div className="flex overflow-hidden gap-4 flex-wrap justify-center lg:justify-start mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-6">
                 {mockData?.map((card) => (
                     <Card
                         key={card.id}
@@ -39,7 +39,7 @@ const ExploreOurProducts = () => {
                 </button>
             </div>
             <div className="border-b-2 mx-9 my-5"></div>
-        </>
+        </div>
     );
 };
 

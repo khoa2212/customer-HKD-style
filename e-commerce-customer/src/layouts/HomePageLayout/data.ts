@@ -1,8 +1,8 @@
 export const images = [
-    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/f3chxyhirztctbcxk2sf.png',
-    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/yr459wve4kmzo7utdvgk.png',
-    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png',
-    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/stws4wo1t4jzx0kef3kl.png',
+    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/z7bpvlwdkqe0jbf8tunz.jpg',
+    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/dq9orbtiyjyqrhnjwyrj.jpg',
+    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717984822/products/xvmpfwckmnrpnl8zakc3.jpg',
+    'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/i4mjn2brdrdmhd2tkfyo.jpg',
 ];
 
 export const mockData = [
