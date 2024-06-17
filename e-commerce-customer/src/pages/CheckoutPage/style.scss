@@ -1,0 +1,12 @@
+.check-mark {
+  display: none;
+  pointer-events: none;
+}
+
+.check-box ~ .check-mark {
+    display: none;
+}
+
+.check-box:checked ~ .check-mark {
+    display: block;
+}

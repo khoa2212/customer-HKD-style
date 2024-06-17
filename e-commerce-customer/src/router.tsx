@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { HomePage, LoginPage, SignUpPage } from './pages';
 import { HomePageLayout } from './layouts';
-import CheckoutPageLayout from './layouts/CheckoutPageLayout/CheckoutPageLayout';
+import { HomePage, LoginPage, SignUpPage } from './pages';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 
 const router = createBrowserRouter([
@@ -12,13 +11,8 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <HomePage />,
             },
-        ],
-    },
-    {
-        element: <CheckoutPageLayout />,
-        children: [
             {
-                path: '/checkout',
+                path: '/cart/checkout',
                 element: <CheckoutPage />,
             },
         ],

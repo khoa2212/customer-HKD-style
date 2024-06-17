@@ -1,156 +1,132 @@
-import { CheckIcon } from '../../components/Icons/Icons';
-import BkashIcon from '../../assets/Bkash.png';
-import NagadIcon from '../../assets/Nagad.png';
-import VisaIcon from '../../assets/Visa.png';
+import { RedButton } from "../../components";
+import { CheckIcon } from "../../components/Icons/Icons";
+import "./style.scss";
+
+const data = [
+  {
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/wchbo34j2ienzuaaqr0i.png",
+    name: "LCD Monitor",
+    price: 100,
+    quantity: 2,
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/f3chxyhirztctbcxk2sf.png",
+    name: "H1 Gamepad",
+    price: 1000,
+    quantity: 4,
+  },
+];
 
 const CheckoutPage = () => {
-    return (
-        <div className="pb-52">
-            <h2 className="font-bold text-xl mb-9">Billing Details</h2>
-            <div className="flex flex-col sm:flex-row gap-5 sm:gap-40">
-                <div className="flex flex-col gap-8">
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base">
-                            Fullname <span className="text-red-500">*</span>
-                        </p>
-                        <input
-                            type="text"
-                            className="w-full bg-slate-100 rounded h-12"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base">
-                            Stress Address
-                            <span className="text-red-500">*</span>
-                        </p>
-                        <input
-                            type="text"
-                            className="w-full bg-slate-100 rounded h-12"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base">
-                            Town/city <span className="text-red-500">*</span>
-                        </p>
-                        <input
-                            type="text"
-                            className="w-full bg-slate-100 rounded h-12"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base">
-                            Phone number <span className="text-red-500">*</span>
-                        </p>
-                        <input
-                            type="text"
-                            className="w-full bg-slate-100 rounded h-12"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base">
-                            Email address{' '}
-                            <span className="text-red-500">*</span>
-                        </p>
-                        <input
-                            type="text"
-                            className="w-full bg-slate-100 rounded h-12"
-                        />
-                    </div>
-                    <div className="flex flex-row gap-2 items-center">
-                        <div className="bg-red-500 rounded cursor-pointer">
-                            <CheckIcon />
-                        </div>
-                        <p>
-                            Save this information for faster check-out next time
-                        </p>
-                    </div>
-                </div>
-                <div className="flex flex-col gap-5 flex-1 sm:pt-10 sm:pr-72">
-                    <div className="flex flex-col gap-5">
-                        <div className="flex items-center gap-7">
-                            <img
-                                className="w-24 h-24 object-cover rounded"
-                                src="https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/z7bpvlwdkqe0jbf8tunz.jpg"
-                                alt="abc"
-                            />
-                            <p className="flex-1">LCD Monitor</p>
-                            <p>$650</p>
-                        </div>
-                        <div className="flex items-center gap-7">
-                            <img
-                                className="w-24 h-24 object-cover rounded"
-                                src="https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/z7bpvlwdkqe0jbf8tunz.jpg"
-                                alt="abc"
-                            />
-                            <p className="flex-1">LCD Monitor</p>
-                            <p>$650</p>
-                        </div>
-                    </div>
-                    <div className="flex border-b-2 pb-3">
-                        <p className="flex-1">Subtotal</p>
-                        <p>$650</p>
-                    </div>
-                    <div className="flex border-b-2 pb-3">
-                        <p className="flex-1">Shipping</p>
-                        <p>Free</p>
-                    </div>
-                    <div className="flex pb-3">
-                        <p className="flex-1">Total</p>
-                        <p>$650</p>
-                    </div>
-
-                    <div className="flex gap-3 items-center rounded">
-                        <input
-                            id="bordered-radio-1"
-                            type="radio"
-                            value=""
-                            name="bordered-radio"
-                            className="w-4 h-4 "
-                        />
-                        <label
-                            htmlFor="bordered-radio-1"
-                            className="w-full text-sm font-medium text-gray-900"
-                        >
-                            Cash on delivery
-                        </label>
-                    </div>
-                    <div className="flex gap-3 items-center rounded">
-                        <input
-                            id="bordered-radio-2"
-                            type="radio"
-                            value=""
-                            name="bordered-radio"
-                            className="w-4 h-4 "
-                        />
-                        <label
-                            htmlFor="bordered-radio-2"
-                            className="w-full text-sm font-medium text-gray-900"
-                        >
-                            Bank
-                        </label>
-                        <img
-                            src={BkashIcon}
-                            alt={'BkashIcon'}
-                            className="object-cover"
-                        />
-                        <img
-                            src={NagadIcon}
-                            alt={'NagadIcon'}
-                            className="object-cover"
-                        />
-                        <img
-                            src={VisaIcon}
-                            alt={'VisaIcon'}
-                            className="object-cover"
-                        />
-                    </div>
-                    <button className="bg-red-500 text-white w-fit inline-block px-5 py-3 rounded">
-                        Place order
-                    </button>
-                </div>
-            </div>
+  return (
+    <div className="pb-52">
+      <span className="flex gap-2 text-slate-400">
+        <span>Home</span>
+        <span>/</span>
+        <span>My account</span>
+        <span>/</span>
+        <span>Cart</span>
+        <span className="text-black">/</span>
+        <span className="text-black">Checkout</span>
+      </span>
+      <p className="font-bold text-2xl mt-12 mb-9">Billing Details</p>
+      <div className="flex gap-40">
+        <div className="flex flex-col gap-6 text-slate-600 flex-1">
+          <div className="flex flex-col gap-2">
+            <p className="text-base">
+              Full name <span className="text-red-500">*</span>
+            </p>
+            <input
+              type="text"
+              className="w-full bg-gray-1 rounded border p-2 outline-none focus:border-red-1"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-base">
+              Stress Address
+              <span className="text-red-500">*</span>
+            </p>
+            <input
+              type="text"
+              className="w-full bg-gray-1 rounded border p-2 outline-none focus:border-red-1"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-base">
+              Town/city <span className="text-red-500">*</span>
+            </p>
+            <input
+              type="text"
+              className="w-full bg-gray-1 rounded border p-2 outline-none focus:border-red-1"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-base">
+              Phone number <span className="text-red-500">*</span>
+            </p>
+            <input
+              type="text"
+              className="w-full bg-gray-1 rounded border p-2 outline-none focus:border-red-1"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-base">
+              Email address
+              <span className="text-red-500">*</span>
+            </p>
+            <input
+              type="text"
+              className="w-full bg-gray-1 rounded border p-2 outline-none focus:border-red-1"
+            />
+          </div>
+          <div className="flex flex-row gap-2 items-center">
+            <span className="bg-gray-1 hover:bg-gray-300 border rounded-sm w-6 h-6 relative">
+              <input
+                type="checkbox"
+                className="check-box cursor-pointer w-full h-full opacity-0"
+              />
+              <span className="absolute top-0 left-0 w-full h-full bg-red-1 flex items-center check-mark cursor-pointer">
+                <CheckIcon />
+              </span>
+            </span>
+            <p>Save this information for faster check-out next time</p>
+          </div>
         </div>
-    );
+        <div className="flex flex-col gap-5 flex-1">
+          <div className="flex flex-col gap-5">
+            {data.map((item) => (
+              <div className="flex items-center gap-7" key={item.image}>
+                <span className="w-11">
+                  <img
+                    className="object-cover"
+                    src={item.image}
+                    alt={item.image}
+                  />
+                </span>
+                <p className="flex-1 items-center mt-4">{item.name}</p>
+                <p className="mt-4">${item.price * item.quantity}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex border-b-2 pb-3 mt-2">
+            <p className="flex-1">Subtotal</p>
+            <p>$650</p>
+          </div>
+          <div className="flex border-b-2 pb-3">
+            <p className="flex-1">Shipping</p>
+            <p>Free</p>
+          </div>
+          <div className="flex pb-3">
+            <p className="flex-1">Total</p>
+            <p>$650</p>
+          </div>
+          <RedButton content="Place order" className="w-1/4" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default CheckoutPage;
