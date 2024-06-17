@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface CarouselProps {
   images: string[];
@@ -10,6 +10,17 @@ const Carousel = (props: CarouselProps) => {
   const onChangeImage = (index: number) => {
     setSelectedIndex(index);
   };
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      const index: number = selectedIndex;
+      //index = index === 3 ? 0 : ++index;
+      setSelectedIndex(index + 1 == 4 ? 0 : index + 1);
+      console.log(selectedIndex);
+    }, 5000);
+
+    return () => clearInterval(id);
+  }, [selectedIndex]);
 
   return (
     <div className="relative px-2 w-full h-[350px]">
