@@ -1,5 +1,6 @@
 import { mockData } from '../../layouts/HomePageLayout/data';
 import Card from '../Card/Card';
+import RedButton from '../RedButton/RedButton';
 
 const BestSellingProducts = () => {
     return (
@@ -13,9 +14,7 @@ const BestSellingProducts = () => {
                     Best selling products
                 </h2>
 
-                <button className="bg-red-600 px-4 py-2 rounded-md text-white">
-                    View alls
-                </button>
+                <RedButton content={"View alls"} />
             </div>
             <div className="flex overflow-hidden gap-4 flex-nowrap mt-6">
                 {mockData?.map((card) => (
