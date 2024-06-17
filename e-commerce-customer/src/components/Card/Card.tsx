@@ -1,3 +1,4 @@
+import { onMouseOutStar, onMouseOverStar } from "../../utils/handle-events";
 import { EyeIcon, HeartIcon, StarIcon } from "../Icons/Icons";
 import "./styles.scss";
 
@@ -22,16 +23,20 @@ const Card = ({
 }: CardProps) => {
   const renderRating = (star: number) => {
     let fillColor = "";
-    if (star > rating) {
+    if (star > Math.round(rating)) {
       fillColor = "white";
-    } else if (star === rating - 0.5) {
-      fillColor = "url(#grad)";
     } else {
       fillColor = "yellow";
     }
 
     return (
-      <StarIcon key={star} fillColor={fillColor} className="cursor-pointer" />
+      <StarIcon
+        onMouseOver={(e) => onMouseOverStar(e)}
+        onMouseOut={(e) => onMouseOutStar(e, fillColor)}
+        key={star}
+        fillColor={fillColor}
+        className="cursor-pointer"
+      />
     );
   };
 
@@ -48,8 +53,8 @@ const Card = ({
             -{sales}%
           </p>
           <div className="absolute top-3 right-3 flex flex-col gap-2">
-            <HeartIcon />
-            <EyeIcon />
+            <HeartIcon className="hover:bg-red-1 hover:text-white" />
+            <EyeIcon className="hover:bg-red-1 hover:text-white" />
           </div>
           <div className="add-to-cart cursor-pointer rounded-md absolute bottom-0 bg-black text-white text-center w-full p-2">
             Add to cart
