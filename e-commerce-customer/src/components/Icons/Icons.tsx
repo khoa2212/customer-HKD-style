@@ -161,7 +161,7 @@ export const CheckIcon = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6 text-white px-0.5"
+            className="size-5 sm:size-6 text-white px-0.5"
         >
             <path
                 strokeLinecap="round"

@@ -21,7 +21,7 @@ const Header = () => {
       </span>
       <span
         id="navigate"
-        className="flex basis-1/3 justify-center gap-9 items-center"
+        className="flex basis-1/3 justify-center gap-1 sm:gap-9 items-center"
       >
         <NavLink
           to="/"
