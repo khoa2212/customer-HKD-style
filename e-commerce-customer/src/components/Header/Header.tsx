@@ -1,17 +1,27 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import WishListIcon from "../../assets/heart.png";
 import CartIcon from "../../assets/Cart.png";
 import MessageIcon from "../MessageIcon/MessageIcon";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const onClickLogo = () => {
+    navigate("/");
+  };
+
   return (
     <div className="bg-white px-1 lg:px-6 py-2 border-b-2 flex justify-between items-center h-full">
-      <span id="logo" className="text-2xl font-bold basis-1/3">
+      <span
+        id="logo"
+        className="text-2xl font-bold basis-1/3 cursor-pointer"
+        onClick={onClickLogo}
+      >
         HKD Style
       </span>
       <span
         id="navigate"
-        className="flex basis-1/3 justify-center gap-9 items-center"
+        className="flex basis-1/3 justify-center gap-1 sm:gap-9 items-center"
       >
         <NavLink
           to="/"

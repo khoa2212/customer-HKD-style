@@ -10,13 +10,8 @@ const ExploreOurProducts = () => {
         <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
         <p className="text-red-700 text-3xl">Our products</p>
       </div>
-      <div className="flex items-end w-full gap-12">
+      <div className="flex items-end w-full gap-12 mt-4">
         <h2 className="font-bold text-3xl flex-1">Explore our products</h2>
-
-        <div className="flex gap-2 pr-3">
-          <ArrowLongLeft />
-          <ArrowLongRight />
-        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-6">
         {mockData?.map((card) => (

@@ -9,7 +9,7 @@ const BestSellingProducts = () => {
                 <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
                 <p className="text-red-700 text-3xl">This month</p>
             </div>
-            <div className="flex items-end w-full gap-12">
+            <div className="flex items-end w-full gap-12 mt-4">
                 <h2 className="font-bold text-3xl flex-1">
                     Best selling products
                 </h2>
