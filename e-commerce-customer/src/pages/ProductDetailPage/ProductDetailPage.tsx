@@ -5,6 +5,9 @@ import RatingStar from "../../components/RatingStar/RatingStar";
 import { statusColor, statusRender } from "../../enums/enums";
 import { mockData } from "../../layouts/HomePageLayout/data";
 import QuantityInput from "../../components/QuantityInput/QuantityInput";
+import ReviewCard from "../../components/ReviewCard/ReviewCard";
+import { mockReviews } from "./data";
+import userImage from "../../assets/user.png";
 
 const ProductDetailPage = () => {
   const params = useParams();
@@ -34,7 +37,7 @@ const ProductDetailPage = () => {
           <span className="flex gap-2">
             <span className="flex gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
-                <RatingStar star={star} rating={data.rating} />
+                <RatingStar key={star} star={star} rating={data.rating} />
               ))}
             </span>
             <span className="text-gray-400">({data.totalReviews} reviews)</span>
@@ -54,10 +57,23 @@ const ProductDetailPage = () => {
           </span>
         </div>
       </div>
-      <div className="mt-4 w-full flex flex-col gap-2">
+      <div className="mt-4 w-full flex flex-col gap-8">
         <div className="flex gap-4 items-center">
           <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
           <p className="text-red-700 text-3xl">Reviews</p>
+        </div>
+        <div className="w-full flex flex-col gap-4">
+          {mockReviews.map((review) => (
+            <ReviewCard
+              key={review.id}
+              id={review.id.toString()}
+              content={review.content}
+              imagePath={userImage}
+              createdAt={review.createdAt}
+              fullName={review.fullName}
+              rating={review.rating}
+            />
+          ))}
         </div>
         <div className="w-full flex flex-col gap-2 items-end">
           <div className="w-full relative h-[200px]">
@@ -69,7 +85,7 @@ const ProductDetailPage = () => {
               <span className="flex gap-1">
                 <span className="flex gap-1">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <RatingStar star={star} rating={0} />
+                    <RatingStar key={star} star={star} rating={0} />
                   ))}
                 </span>
               </span>

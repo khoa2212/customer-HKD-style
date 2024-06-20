@@ -4,9 +4,10 @@ import { StarIcon } from "../Icons/Icons";
 export interface RatingStarProps {
   star: number;
   rating: number;
+  className?: string;
 }
 
-const RatingStar = ({ star, rating }: RatingStarProps) => {
+const RatingStar = ({ star, rating, className }: RatingStarProps) => {
   const getFillColor = (): string => {
     if (star > Math.round(rating)) {
       return "white";
@@ -22,7 +23,7 @@ const RatingStar = ({ star, rating }: RatingStarProps) => {
         onMouseOut={(e) => onMouseOutStar(e, getFillColor())}
         key={star}
         fillColor={getFillColor()}
-        className="cursor-pointer"
+        className={`cursor-pointer ${className}`}
       />
     </span>
   );
