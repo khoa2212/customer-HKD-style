@@ -5,6 +5,7 @@ import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import Error404Page from "./pages/Error404Page/Error404Page";
 import ForbiddenPage from "./pages/ForbiddenPage/ForbiddenPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage/UnderConstructionPage";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/product-list",
         element: <ProductListPage />,
+      },
+      {
+        path: "/product-detail/:id",
+        element: <ProductDetailPage />,
       },
     ],
   },

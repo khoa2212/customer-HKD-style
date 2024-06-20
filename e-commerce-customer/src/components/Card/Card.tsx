@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { onMouseOutStar, onMouseOverStar } from "../../utils/handle-events";
 import { EyeIcon, HeartIcon, StarIcon } from "../Icons/Icons";
 import "./styles.scss";
+import RatingStar from "../RatingStar/RatingStar";
 
 interface CardProps {
   id: number;
@@ -21,23 +23,10 @@ const Card = ({
   rating,
   totalReviews,
 }: CardProps) => {
-  const renderRating = (star: number) => {
-    let fillColor = "";
-    if (star > Math.round(rating)) {
-      fillColor = "white";
-    } else {
-      fillColor = "yellow";
-    }
+  const navigate = useNavigate();
 
-    return (
-      <StarIcon
-        onMouseOver={(e) => onMouseOverStar(e)}
-        onMouseOut={(e) => onMouseOutStar(e, fillColor)}
-        key={star}
-        fillColor={fillColor}
-        className="cursor-pointer"
-      />
-    );
+  const onRedirectToProductDetail = () => {
+    navigate("/product-detail/1");
   };
 
   return (
@@ -55,8 +44,12 @@ const Card = ({
             </p>
           )}
           <div className="absolute top-3 right-3 flex flex-col gap-2">
-            <HeartIcon className="hover:bg-red-1 hover:text-white" />
-            <EyeIcon className="hover:bg-red-1 hover:text-white" />
+            <span>
+              <HeartIcon className="hover:bg-red-1 hover:text-white" />
+            </span>
+            <span onClick={onRedirectToProductDetail}>
+              <EyeIcon className="hover:bg-red-1 hover:text-white" />
+            </span>
           </div>
           <div className="add-to-cart cursor-pointer rounded-md absolute bottom-0 bg-black text-white text-center w-full p-2">
             Add to cart
@@ -72,7 +65,9 @@ const Card = ({
         <p className="line-through ml-2">${price}</p>
       </div>
       <div className="flex gap-2">
-        {[1, 2, 3, 4, 5].map((star) => renderRating(star))}
+        {[1, 2, 3, 4, 5].map((star) => (
+          <RatingStar star={star} rating={rating} />
+        ))}
         <div>({totalReviews})</div>
       </div>
     </div>
