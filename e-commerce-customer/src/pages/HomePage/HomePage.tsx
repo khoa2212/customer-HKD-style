@@ -20,9 +20,9 @@ const HomePage = () => {
             <div className="mt-6">
                 <FlashSells />
             </div>
-            <div className="mt-6">
+            {/* <div className="mt-6">
                 <BestSellingProducts />
-            </div>
+            </div> */}
             <div className="mt-6 w-full flex justify-center">
                 <ExploreOurProducts />
             </div>
