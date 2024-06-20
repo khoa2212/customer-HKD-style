@@ -1,3 +1,5 @@
+import { StatusEnum } from "../../enums/enums";
+
 export const images = [
   "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/z7bpvlwdkqe0jbf8tunz.jpg",
   "https://res.cloudinary.com/dtzgqc50b/image/upload/v1717983701/products/dq9orbtiyjyqrhnjwyrj.jpg",
@@ -29,6 +31,7 @@ export const mockData = [
     price: 1000,
     sales: 50, // 50% of price
     totalReviews: 5,
+    status: StatusEnum.ACTIVE,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus nisi, ultricies nec commodo quis, efficitur ut metus. Sed semper, sem sit amet rhoncus cursus, dui tellus commodo velit, ac vestibulum turpis eros vel nunc. Integer feugiat egestas libero, et pellentesque nunc aliquam non. In eu sem a leo convallis viverra. Sed vitae luctus neque. Praesent sed urna fermentum, hendrerit tortor et, accumsan elit. Praesent ultrices leo eget elit vehicula, eget congue turpis aliquet. Morbi faucibus hendrerit turpis sed aliquam. Cras a quam ante. Nulla facilisi. Vivamus viverra, felis ut luctus vestibulum, nunc ante pulvinar turpis, non euismod ex eros.",
   },
