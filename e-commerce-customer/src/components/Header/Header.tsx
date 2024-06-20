@@ -1,6 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import WishListIcon from "../../assets/heart.png";
-import CartIcon from "../../assets/Cart.png";
+import { HeartIcon, CartIcon } from "../Icons/Icons";
 import MessageIcon from "../MessageIcon/MessageIcon";
 
 const Header = () => {
@@ -56,19 +55,13 @@ const Header = () => {
           Login
         </NavLink>
       </span>
-      <span className="basis-1/3 flex justify-end items-center gap-3 h-full">
-        <MessageIcon
-          className="w-4 h-4"
-          icon={WishListIcon}
-          alt="wishlist-logo"
-          number={0}
-        />
-        <MessageIcon
-          className="w-5 h-4"
-          icon={CartIcon}
-          alt="cart-logo"
-          number={0}
-        />
+      <span className="basis-1/3 flex justify-end items-center gap-2 h-full">
+        <MessageIcon className="w-7 h-7" number={0}>
+          <HeartIcon className="hover:bg-gray-300"/>
+        </MessageIcon>
+        <MessageIcon className="w-7 h-7" number={0}>
+          <CartIcon className="hover:bg-gray-300" />
+        </MessageIcon>
       </span>
     </div>
   );
