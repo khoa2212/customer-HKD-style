@@ -9,7 +9,7 @@ export const mockData = [
     {
         id: 1,
         attachment: [
-            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770332/products/wb5ckgto2hk9yvbbx3ez.png',
+            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1718421898/products/gbrmv2c2jakwcbttlojz.png',
         ],
         rating: 0,
         name: 'AVX G2 438',
@@ -31,7 +31,7 @@ export const mockData = [
     {
         id: 3,
         attachment: [
-            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/ltt6lsbnnfuvs1aputna.png',
+            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1718421895/products/ijp0ffievkup5lczfynr.png',
         ],
         rating: 2,
         name: 'AVX G2 438',
@@ -53,7 +53,7 @@ export const mockData = [
     {
         id: 5,
         attachment: [
-            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770330/products/r3mdq6xljovga6negthe.png',
+            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1718421895/products/fcuwir8uxjcemdhhbvdc.png',
         ],
         rating: 4.5,
         name: 'AVX G2 438',
@@ -174,7 +174,7 @@ export const mockData = [
     {
         id: 16,
         attachment: [
-            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770329/products/q68b4strdnqczjio4tt4.png',
+            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1718421895/products/iarrs77wc3libfpmugql.png',
         ],
         rating: 5,
         name: 'AVX G2 438',
@@ -196,7 +196,7 @@ export const mockData = [
     {
         id: 18,
         attachment: [
-            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1717770328/products/lw1701tzogi4rqqxacos.png',
+            'https://res.cloudinary.com/dtzgqc50b/image/upload/v1718421895/products/iarrs77wc3libfpmugql.png',
         ],
         rating: 5,
         name: 'AVX G2 438',

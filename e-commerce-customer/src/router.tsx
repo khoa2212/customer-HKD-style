@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomePageLayout } from "./layouts";
-import { HomePage, LoginPage, SignUpPage } from "./pages";
+import { HomePage, LoginPage, ProductListPage, SignUpPage } from "./pages";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import Error404Page from "./pages/Error404Page/Error404Page";
 import ForbiddenPage from "./pages/ForbiddenPage/ForbiddenPage";
@@ -41,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <UnderConstructionPage />,
+      },
+      {
+        path: "/product-list",
+        element: <ProductListPage />,
       },
     ],
   },
