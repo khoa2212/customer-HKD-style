@@ -1,57 +1,66 @@
-import PhoneImage from '../../assets/phone.png';
+import { NavLink } from "react-router-dom";
+import PhoneImage from "../../assets/phone.png";
+import { RedButton } from "../../components";
+import { GoogleIcon } from "../../components/Icons/Icons";
 
 const LoginPage = () => {
-    return (
-        <div className="h-4/5 flex justify-start gap-32 pr-48 py-24	">
-            <img
-                src={PhoneImage}
-                alt="PhoneImage"
-                className="flex-1 bg-blue-1 object-cover bg-transparent object-center"
-            />
-
-            <div className="py-32">
-                <h1 className="text-2xl text-black font-medium pb-6">
-                    Login to HKD Style
-                </h1>
-                <p className="pb-12">
-                    Don't have an account?{' '}
-                    <span className="text-red-500 cursor-pointer">
-                        Sign up now
-                    </span>
-                </p>
-                <form action="">
-                    <div className="border-b-2 flex gap-2 mb-4">
-                        <p className="opacity-50 w-24">Email</p>{' '}
-                        <input autoFocus type="email" className="w-full" />
-                    </div>
-                    <div className="border-b-2 flex gap-2">
-                        <p className="opacity-50 w-24">Password</p>{' '}
-                        <input type="password" className="w-full" />
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="w-full bg-red-500 text-white hover:bg-red-700 px-5 py-3 rounded-md mt-6"
-                    >
-                        Login
-                    </button>
-                </form>
-                <p className="text-red-500 text-center mt-2 cursor-pointer">
-                    Forgot password
-                </p>
-                <div className="flex py-3 items-center">
-                    <div className="flex-grow border-t border-gray-400"></div>
-                    <span className="flex-shrink mx-4 mb-2 text-gray-400">
-                        or
-                    </span>
-                    <div className="flex-grow border-t border-gray-400"></div>
-                </div>
-                <button className="w-full px-5 py-3 rounded-md mt-3 border-2 hover:bg-slate-400">
-                    Sign in with Google
-                </button>
-            </div>
+  return (
+    <div className="grid grid-cols-2 gap-5">
+      <img src={PhoneImage} alt="PhoneImage" />
+      <div className="flex flex-col justify-center">
+        <div className="flex flex-col gap-3 py-6">
+          <p className="text-2xl text-black font-medium">Login to HKD Style</p>
+          <p>
+            Don't have an account?
+            <NavLink
+              to="/sign-up"
+              className={({ isActive }) =>
+                isActive ? "text-red-1 font-bold underline ml-1" : "text-red-1 ml-1"
+              }
+            >
+              Sign up now
+            </NavLink>
+          </p>
         </div>
-    );
+        <form className="flex gap-5 flex-col">
+          <div className="border-b-2">
+            <input
+              type="email"
+              className="w-full outline-none border-none py-2"
+              placeholder="Email"
+            />
+          </div>
+          <div className="border-b-2">
+            <input
+              type="Password"
+              className="w-full outline-none border-none py-2"
+              placeholder="password"
+            />
+          </div>
+          <div className="flex flex-col items-center gap-3 py-2">
+            <RedButton type="submit" content="Login" className="w-full" />
+            <NavLink
+              to="/forgot-password"
+              className={({ isActive }) =>
+                isActive ? "text-red-1 font-bold underline" : "text-red-1"
+              }
+            >
+              Forgot password?
+            </NavLink>
+          </div>
+        </form>
+        <div className="flex items-center">
+          <div className="flex-grow border-t border-gray-400"></div>
+          <span className="flex-shrink mx-4 mb-2 text-gray-400">or</span>
+          <div className="flex-grow border-t border-gray-400"></div>
+        </div>
+        <button className="w-full px-4 py-2 rounded-md mt-3 border shadow-sm flex items-center justify-center gap-2 hover:bg-red-1 hover:text-white">
+          <GoogleIcon />
+          <span>Sign in with Google</span>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default LoginPage;
