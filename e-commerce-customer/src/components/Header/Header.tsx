@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { HeartIcon, CartIcon } from "../Icons/Icons";
+import { HeartIcon, CartIcon, UserIcon, LogoutIcon } from "../Icons/Icons";
 import MessageIcon from "../MessageIcon/MessageIcon";
+import "./style.scss";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -57,11 +58,31 @@ const Header = () => {
       </span>
       <span className="basis-1/3 flex justify-end items-center gap-2 h-full">
         <MessageIcon className="w-7 h-7" number={0}>
-          <HeartIcon className="hover:bg-gray-300"/>
+          <HeartIcon className="hover:bg-gray-300" />
         </MessageIcon>
         <MessageIcon className="w-7 h-7" number={0}>
           <CartIcon className="hover:bg-gray-300" />
         </MessageIcon>
+        <span className="user-icon w-7 h-7 p-1 flex justify-center items-center rounded-full cursor-pointer hover:bg-red-1 hover:text-white relative">
+          <UserIcon />
+          <span className="user-dropdown absolute from-gray-400 to-black bg-gradient-to-r p-2 rounded-md text-white flex-col text-sm top-full right-0 z-30 w-[200px] gap-2">
+            <span className="w-full flex items-center gap-4">
+              <UserIcon className="w-6 h-6" />
+              <NavLink
+                to="/manage-account"
+                className={({ isActive }) =>
+                  isActive ? "text-red-1" : "hover:text-red-1"
+                }
+              >
+                Manage account
+              </NavLink>
+            </span>
+            <span className="w-full flex items-center gap-4">
+              <LogoutIcon className="w-6 h-6" />
+              <span className="hover:text-red-1">Logout</span>
+            </span>
+          </span>
+        </span>
       </span>
     </div>
   );

@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { onMouseOutStar, onMouseOverStar } from "../../utils/handle-events";
-import { EyeIcon, HeartIcon, StarIcon } from "../Icons/Icons";
-import "./styles.scss";
+import { EyeIcon, HeartIcon } from "../Icons/Icons";
 import RatingStar from "../RatingStar/RatingStar";
+import "./styles.scss";
 
 interface CardProps {
   id: number;
@@ -66,7 +65,7 @@ const Card = ({
       </div>
       <div className="flex gap-2">
         {[1, 2, 3, 4, 5].map((star) => (
-          <RatingStar star={star} rating={rating} />
+          <RatingStar key={star} star={star} rating={rating} />
         ))}
         <div>({totalReviews})</div>
       </div>
