@@ -32,9 +32,9 @@ const LoginPage = () => {
           </div>
           <div className="border-b-2">
             <input
-              type="Password"
+              type="password"
               className="w-full outline-none border-none py-2"
-              placeholder="password"
+              placeholder="Password"
             />
           </div>
           <div className="flex flex-col items-center gap-3 py-2">
