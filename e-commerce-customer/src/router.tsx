@@ -6,6 +6,7 @@ import Error404Page from "./pages/Error404Page/Error404Page";
 import ForbiddenPage from "./pages/ForbiddenPage/ForbiddenPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage/UnderConstructionPage";
 import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
+import CartPage from "./pages/CartPage/CartPage";
 
 const router = createBrowserRouter([
   {
@@ -48,8 +49,16 @@ const router = createBrowserRouter([
         element: <UnderConstructionPage />,
       },
       {
-        path: "/manage-account",
+        path: "/manage-account/profile",
         element: <UnderConstructionPage />,
+      },
+      {
+        path: "/manage-account/cart",
+        element: <CartPage/>,
+      },
+      {
+        path: "/manage-account/wishlist",
+        element: <UnderConstructionPage/>,
       },
       {
         path: "/product-list",

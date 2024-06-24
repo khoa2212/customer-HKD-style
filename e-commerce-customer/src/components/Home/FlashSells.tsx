@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { mockData } from "../../layouts/HomePageLayout/data";
+import { mockData } from "../../pages/HomePage/data";
 import Card from "../Card/Card";
 import { ArrowLongLeft, ArrowLongRight } from "../Icons/Icons";
 import RedButton from "../RedButton/RedButton";
@@ -68,7 +68,10 @@ const FlashSells = () => {
         ))}
       </div>
       <div className="flex justify-center my-6">
-        <RedButton content={"View all products"} onClick={onRedirectToProductList} />
+        <RedButton
+          content={"View all products"}
+          onClick={onRedirectToProductList}
+        />
       </div>
       <div className="border-b-2 mx-9 my-5"></div>
     </>

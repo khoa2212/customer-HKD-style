@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { mockData } from "../../layouts/HomePageLayout/data";
+import { mockData } from "../../pages/HomePage/data";
 import Card from "../Card/Card";
 import RedButton from "../RedButton/RedButton";
 

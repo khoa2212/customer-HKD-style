@@ -3,17 +3,19 @@ import "./style.scss";
 
 export interface QuantityInputProps {
   quantity: number;
+  className?: string;
   onIncrease?: () => void;
   onDecrease?: () => void;
 }
 
 const QuantityInput = ({
   quantity,
+  className,
   onIncrease,
   onDecrease,
 }: QuantityInputProps) => {
   return (
-    <span className="flex">
+    <span className={`flex ${className}`}>
       <button
         className="p-1 border rounded-l-md hover:bg-red-1 hover:text-white"
         onClick={() => onDecrease}

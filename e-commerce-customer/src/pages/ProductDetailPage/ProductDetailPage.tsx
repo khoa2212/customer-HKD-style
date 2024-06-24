@@ -3,7 +3,7 @@ import { RedButton } from "../../components";
 import { HeartIcon } from "../../components/Icons/Icons";
 import RatingStar from "../../components/RatingStar/RatingStar";
 import { statusColor, statusRender } from "../../enums/enums";
-import { mockData } from "../../layouts/HomePageLayout/data";
+import { mockData } from "../HomePage/data";
 import QuantityInput from "../../components/QuantityInput/QuantityInput";
 import ReviewCard from "../../components/ReviewCard/ReviewCard";
 import { mockReviews } from "./data";
