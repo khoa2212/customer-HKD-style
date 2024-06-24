@@ -46,13 +46,6 @@ const SignUpPage = () => {
               placeholder="Password"
             />
           </div>
-          <div className="border-b-2">
-            <input
-              type="password"
-              className="w-full outline-none border-none py-2"
-              placeholder="Confirm password"
-            />
-          </div>
           <div className="flex flex-col items-center gap-3 py-2">
             <RedButton type="submit" content="Sign up" className="w-full" />
             <NavLink
