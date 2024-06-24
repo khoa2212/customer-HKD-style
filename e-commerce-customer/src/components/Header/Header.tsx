@@ -62,7 +62,7 @@ const Header = () => {
       </span>
       <span className="basis-1/3 flex justify-end items-center gap-2 h-full">
         <NavLink
-          to="/wishlist"
+          to="/manage-account/wishlist"
           className={({ isActive }) =>
             isActive
               ? "bg-red-1 rounded-full text-white"
@@ -74,7 +74,7 @@ const Header = () => {
           </MessageIcon>
         </NavLink>
         <NavLink
-          to="/cart"
+          to="/manage-account/cart"
           className={({ isActive }) =>
             isActive
               ? "bg-red-1 rounded-full text-white"
@@ -86,7 +86,7 @@ const Header = () => {
           </MessageIcon>
         </NavLink>
         <NavLink
-          to="/manage-account"
+          to="/manage-account/profile"
           className={({ isActive }) =>
             isActive
               ? "bg-red-1 rounded-full text-white user-icon w-7 h-7 p-1 flex justify-center items-center cursor-pointer relative"

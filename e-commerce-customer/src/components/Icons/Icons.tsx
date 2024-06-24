@@ -348,3 +348,22 @@ export const LogoutIcon = ({ className }: IconProps) => {
     </svg>
   );
 };
+
+export const CancelIcon = ({ className }: IconProps) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`size-7 ${className}`}
+    >
+      <path
+        d="M9 15L12 12M15 9L11.9994 12M11.9994 12L9 9M12 12L15 15"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};

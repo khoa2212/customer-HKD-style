@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "../../components/Card/Card";
 import Pagination from "../../components/Pagination/Pagination";
-import { mockData } from "../../layouts/HomePageLayout/data";
+import { mockData } from "../HomePage/data";
 
 export interface PaginationState {
   curPage: number;

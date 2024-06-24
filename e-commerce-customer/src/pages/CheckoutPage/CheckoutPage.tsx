@@ -23,7 +23,7 @@ const CheckoutPage = () => {
             <span className="flex gap-2 text-slate-400">
                 <span>Home</span>
                 <span>/</span>
-                <span>My account</span>
+                <span>Manage account</span>
                 <span>/</span>
                 <span>Cart</span>
                 <span className="text-black">/</span>

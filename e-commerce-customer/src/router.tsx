@@ -49,15 +49,15 @@ const router = createBrowserRouter([
         element: <UnderConstructionPage />,
       },
       {
-        path: "/manage-account",
+        path: "/manage-account/profile",
         element: <UnderConstructionPage />,
       },
       {
-        path: "/cart",
+        path: "/manage-account/cart",
         element: <CartPage/>,
       },
       {
-        path: "/wishlist",
+        path: "/manage-account/wishlist",
         element: <UnderConstructionPage/>,
       },
       {
