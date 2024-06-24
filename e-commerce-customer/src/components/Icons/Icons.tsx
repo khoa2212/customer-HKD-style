@@ -15,7 +15,7 @@ export const HeartIcon = ({ className }: IconProps) => {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className={`size-7 bg-white rounded-full p-1 cursor-pointer ${className}`}
+      className={`size-7 rounded-full p-1 cursor-pointer ${className}`}
     >
       <path
         strokeLinecap="round"
@@ -32,7 +32,7 @@ export const CartIcon = ({ className }: IconProps) => {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`size-7 bg-white rounded-full p-1 cursor-pointer ${className}`}
+      className={`size-7 rounded-full p-1 cursor-pointer ${className}`}
     >
       <path
         d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
@@ -74,7 +74,7 @@ export const EyeIcon = ({ className }: IconProps) => {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className={`size-7 bg-white rounded-full p-1 cursor-pointer ${className}`}
+      className={`size-7 rounded-full p-1 cursor-pointer ${className}`}
     >
       <path
         strokeLinecap="round"
