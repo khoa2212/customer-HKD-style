@@ -14,7 +14,7 @@ const BestSellingProducts = () => {
     <>
       <div className="flex gap-4 items-center">
         <div className="w-[20px] h-[40px] bg-red-700 rounded-sm"></div>
-        <p className="text-red-700 text-3xl">This month</p>
+        <p className="text-red-700 text-3xl">Today</p>
       </div>
       <div className="flex items-end w-full gap-12 mt-4">
         <h2 className="font-bold text-3xl flex-1">Best selling products</h2>

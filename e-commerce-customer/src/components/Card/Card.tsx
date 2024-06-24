@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { EyeIcon, HeartIcon } from "../Icons/Icons";
+import { EyeIcon, HeartIcon, TrashIcon } from "../Icons/Icons";
 import RatingStar from "../RatingStar/RatingStar";
 import "./styles.scss";
 
@@ -12,6 +12,7 @@ interface CardProps {
   rating: number;
   totalReviews: number;
   className?: string;
+  isWishlist?: boolean;
 }
 
 const Card = ({
@@ -21,6 +22,7 @@ const Card = ({
   price,
   rating,
   totalReviews,
+  isWishlist,
 }: CardProps) => {
   const navigate = useNavigate();
 
@@ -44,7 +46,11 @@ const Card = ({
           )}
           <div className="absolute top-3 right-3 flex flex-col gap-2">
             <span>
-              <HeartIcon className="hover:bg-red-1 hover:text-white bg-white" />
+              {isWishlist ? (
+                <TrashIcon className="hover:bg-red-1 hover:text-white bg-white" />
+              ) : (
+                <HeartIcon className="hover:bg-red-1 hover:text-white bg-white" />
+              )}
             </span>
             <span onClick={onRedirectToProductDetail}>
               <EyeIcon className="hover:bg-red-1 hover:text-white bg-white" />

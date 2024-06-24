@@ -7,6 +7,7 @@ import ForbiddenPage from "./pages/ForbiddenPage/ForbiddenPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage/UnderConstructionPage";
 import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 import CartPage from "./pages/CartPage/CartPage";
+import WishlistPage from "./pages/WishlistPage/WishlistPage";
 
 const router = createBrowserRouter([
   {
@@ -54,11 +55,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/manage-account/cart",
-        element: <CartPage/>,
+        element: <CartPage />,
       },
       {
         path: "/manage-account/wishlist",
-        element: <UnderConstructionPage/>,
+        element: <WishlistPage />,
       },
       {
         path: "/product-list",
